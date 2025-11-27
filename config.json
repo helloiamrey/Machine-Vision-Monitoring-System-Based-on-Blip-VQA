@@ -1,0 +1,60 @@
+{
+  "window": {
+    "title": "智能台历 - 每日天气与新闻",
+    "geometry": "1600x900"
+  },
+  "api": {
+    "weather_api_key": "SWOiSWkZWBrzXEjHx",
+    "city_id": "东莞"
+  },
+  "motion_detector": {
+    "motion_threshold": 400,
+    "min_contour_area": 100,
+    "motion_duration_threshold": 0.5,
+    "sleep_timeout": 120.0,
+    "emergency_threshold": 5000,
+    "emergency_cooldown": 30.0,
+    "sleep_frame_skip": 5,
+    "sleep_motion_threshold": 2000,
+    "script_interval": 5.0,
+    "initialization_threshold": 10
+  },
+  "camera": {
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "preheat_frames": 10,
+    "resume_preheat_frames": 5
+  },
+  "email": {
+    "smtp_server": "smtp.qq.com",
+    "smtp_port": 465,
+    "sender": "2996963411@qq.com",
+    "sender_name": "BOT",
+    "password": "hgdgvwuhkzimdfad",
+    "receiver": "114514.iamrey@gmail.com",
+    "receiver_name": "紧急联系人"
+  },
+  "models": {
+    "vqa_path": "./vqat",
+    "image_caption_path": "./model"
+  },
+  "emergency": {
+    "alert_sound": "alert_v3.mp3",
+    "succeed_sound": "succeedsending.mp3",
+    "questions": [
+      "Did someone fall in the picture?",
+      "Is there any person?"
+    ],
+    "suspicious_questions": [
+      "Does the person in the picture appear suspicious, for example, holding a knife?", 
+      "Is there any person?"
+    ],
+    "shots_path": "./shots"
+  },
+  "update_intervals": {
+    "time_ms": 1000,
+    "weather_ms": 600000,
+    "news_ms": 3600000
+  }
+}
