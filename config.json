@@ -4,7 +4,7 @@
     "geometry": "1600x900"
   },
   "api": {
-    "weather_api_key": "SWOiSWkZWBrzXEjHx",
+    "weather_api_key": "",
     "city_id": "东莞"
   },
   "motion_detector": {
@@ -58,3 +58,4 @@
     "news_ms": 3600000
   }
 }
+
